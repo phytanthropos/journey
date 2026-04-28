@@ -1,0 +1,21 @@
+PROJECT NOTES:
+This demo converts a simple note into Markdown.
+
+IMPORTANT: keep output readable
+- gather requirements
+- build converter
+- verify output
+
+1. Read input text
+2. Apply heuristic formatting
+3. Write Markdown output
+
+CODE SAMPLE:
+    print("hello world")
+    for item in items:
+        print(item)
+
+> This should remain a block quote.
+
+FINAL REMARKS:
+The converter should preserve structure without inventing content.
