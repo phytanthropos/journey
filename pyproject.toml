@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyquality"
+version = "0.1.0"
+description = "A small Python CLI for scanning and fixing simple code-quality issues."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Anthropos" }]
+license = { text = "MIT" }
+dependencies = []
+
+[project.scripts]
+pyquality = "pyquality.cli:main"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["pyquality*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
